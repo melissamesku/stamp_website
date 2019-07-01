@@ -9,7 +9,6 @@ body {
 	background: url(img/pexels-photo-2378543.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	width: 100%;
@@ -22,15 +21,8 @@ a {
 }
 a:hover, a:focus {
 	-webkit-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
 	transition: .25s ease-in-out;
-  	color: #68bdff;
-}
-.link {
-	color: #68bdff;
-}
-.link:hover {
-	color: #ebebeb;
+  color: #68bdff;
 }
 nav ul {
 	list-style: none;
@@ -133,12 +125,12 @@ header nav ul li {
 	width: 0%;
 }
 .menu-button.active span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 .menu-button.active span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 35em) {
@@ -158,8 +150,8 @@ header nav ul li {
 */
 
 main {
-    flex-direction: column;
-    margin: 3.5rem auto;
+  flex-direction: column;
+  margin: 3.5rem auto;
 }
 .content-wrapper {
 	width: calc(100% - 3rem);
@@ -167,7 +159,7 @@ main {
 	text-align: center;
 }
 .message-heading {
-	padding: 1.15rem 0;
+	padding: 0 0 1.15rem 0;
 	font-family: "DM Sans", Helvetica, Arial, sans-serif;
 	font-size: 3rem;
 	letter-spacing: -.1rem;
@@ -211,19 +203,20 @@ main {
 
 .form-input-fields {
 	margin: 0 auto -0.063rem auto;
-  width: calc(100% - 0.250rem);
-  max-width: 18.25rem;
+	width: calc(100% - 0.250rem);
+	max-width: 18.25rem;
 	border-top-right-radius: 0.125rem;
 	border-top-left-radius: 0.125rem;
 	box-shadow: 0 0 0 0.125rem rgba(255, 255, 255, 0.2); 
 	background-color: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
 }
 .new-user-form input {
 	width: 100%;
-	height: 2.25rem;
-  margin: 0;
-  padding: 0 0.5rem;
-  font-family: "Roboto";
+	height: 2.5rem;
+	margin: 0;
+	padding: 0 0.5rem;
+	font-family: "Roboto";
 	border: none;
 	border-bottom: 0.063rem solid rgba(255, 255, 255, 0.2);
 	background: none;
@@ -236,7 +229,7 @@ main {
 .new-user-form input[name=password] {
 	background: url(img/privacy-eye-icon.png) no-repeat right center;
 	background-size: 1.75rem;
-	background-position: 97% 50%;
+	background-position: 92% 50%;
 	border-bottom: none;
 }
 
@@ -244,28 +237,28 @@ main {
 	color: #ebebeb;
 }
 .new-user-form button {
-  display: block;
-  height: 2.25rem;
-  width: 100%;
-  max-width: 18.5rem;
-  padding: 0.5rem 2rem;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 0.75rem;
-  font-family: "Roboto";
-  background-color: #2c99ed;
-  color: #ebebeb;
-  cursor: pointer;
-  border: none;
-  border-bottom-right-radius: 0.125rem;
-  border-bottom-left-radius: 0.125rem;
-  -webkit-transition: .25s ease-in-out;
+	display: block;
+	height: 2.5rem;
+	width: 100%;
+	max-width: 18.5rem;
+	padding: 0.5rem 2rem;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.75rem;
+	font-family: "Roboto";
+	background-color: #0053ba;
+	color: #ebebeb;
+	cursor: pointer;
+	border: none;
+	border-bottom-right-radius: 0.125rem;
+	border-bottom-left-radius: 0.125rem;
+	-webkit-transition: .25s ease-in-out;
 	transition: .25s ease-in-out;
 }
 
 .new-user-form button:hover,
 .new-user-form button:focus {
-  background-color: #0053ba;
+	background-color: #2c99ed;
 }
 
 .new-user-form button:focus {
@@ -279,11 +272,11 @@ main {
 
 .form-disclaimer {
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 1.5rem 0 0 0;
 	text-align: center;
-  font-size: .75rem;
-  line-height: 1.5;
-  color: #999;
+	font-size: .75rem;
+	line-height: 1.5;
+	color: #999;
 }
 .form-disclaimer .link {
 	display: block;
@@ -294,7 +287,7 @@ main {
 @media screen and (min-width: 50em) {
 	.signup-section {
 		max-width: 18.5rem;
-	    margin-left: 3rem;
+	  margin-left: 3rem;
 	}
 }
 
@@ -362,17 +355,17 @@ footer .copyright {
 }
 .pullout-menu-wrapper {
 	margin-top: 10rem;
-  padding: 0 2rem;
-  text-align: right;
-  font-style: italic;
-  font-weight: bold;
-  color: #222;
+	padding: 0 2rem;
+	text-align: right;
+	font-style: italic;
+	font-weight: bold;
+	color: #222;
 }
 @-webkit-keyframes slide {
-    100% { right: 0; }
+  100% { right: 0; }
 }
 @keyframes slide {
-    100% { right: 0; }
+  100% { right: 0; }
 }
 
 
